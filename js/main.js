@@ -56,7 +56,7 @@ $(document).on('ready', function () {
 		listColor[i].style.backgroundColor = src;
 	}
 
-	// 2. Init Coutdown clock
+	// 2. Init Countdown clock
 	try {
 		// check if clock is initialised
 		$('.clock-countdown').downCount({

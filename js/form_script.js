@@ -2,11 +2,11 @@
 
 /* Ajax Form Plugin V 1.0.1
  * Send contact and newsletter form data to a server and waiting for its response.
- * Compatible with jqery validator plugin
+ * Compatible with jquery validator plugin
  */
 
 (function ($) {
-
+  // Define the initForm function that is called by main.js
 	$.fn.initForm = function (options) {
 		var settings = $.extend({
 			type: 'post',
@@ -42,9 +42,9 @@
 
 						/* CALLBACK FOR SENDING EMAIL GOEAS HERE */
 						success: function (data) {
-							//Ajax connexion was a success, now handle response
+							//Ajax connection was a success, now handle response
 							if (data && !data.error) {
-								// Hide for if no error
+								// Hide form if no error
 								settings.successClean.val("");
 								settings.successInvisible.addClass('invisible');
 								settings.successGone.addClass('gone');
@@ -54,7 +54,7 @@
 							}
 							// Else the login credentials were invalid.
 							else {
-								//Ajax connexion reject an error a success, now handle response
+								//Ajax connection reject an error a success, now handle response
 								settings.textFeedback.removeClass('gone');
 								settings.textFeedback.removeClass('invisible');
 								settings.textFeedback.html('Error when sending request.');
