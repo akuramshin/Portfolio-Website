@@ -10,7 +10,7 @@
 	$.fn.initForm = function (options) {
 		var settings = $.extend({
 			type: 'POST',
-			serverURL: '#',
+			serverUrl: '#',
 			successClean: this.find('.form-success-clean'),
 			successGone: this.find('.form-success-gone'),
 			successInvisible: this.find('.form-success-invisible'),
@@ -37,7 +37,7 @@
 						 * depending to your requirements
 						 */
 						type: settings.type,
-						url: settings.url,
+						url: settings.serverUrl,
 						data: form_data,
 
 						/* CALLBACK FOR SENDING EMAIL GOEAS HERE */
