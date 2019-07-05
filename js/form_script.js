@@ -9,8 +9,7 @@
   // Define the initForm function that is called by main.js
 	$.fn.initForm = function (options) {
 		var settings = $.extend({
-			type: 'post',
-			serverUrl: '#',
+			type: 'POST',
 			successClean: this.find('.form-success-clean'),
 			successGone: this.find('.form-success-gone'),
 			successInvisible: this.find('.form-success-invisible'),
@@ -27,6 +26,7 @@
 				form_inputs.each(function () {
 					form_data[this.name] = $(this).val();
 				});
+			 	console.log(form_data);
 				$.ajax(
 					{
 						/*
@@ -35,15 +35,14 @@
 						 * external URL such as:  url: 'http://www.example.com/avenir/ajaxserver/server.php'
 						 * depending to your requirements
 						 */
-						url: settings.serverUrl,
 						type: settings.type,
+						url: 'contact_mailer.php',
 						data: form_data,
-						dataType: 'json',
 
 						/* CALLBACK FOR SENDING EMAIL GOEAS HERE */
-						success: function (data) {
+						success: function (response) {
 							//Ajax connection was a success, now handle response
-							if (data && !data.error) {
+							if (response && !response.error) {
 								// Hide form if no error
 								settings.successClean.val("");
 								settings.successInvisible.addClass('invisible');
@@ -54,7 +53,7 @@
 							}
 							// Else the login credentials were invalid.
 							else {
-								//Ajax connection reject an error a success, now handle response
+								// Either recieved no response, or the server resonded with error
 								settings.textFeedback.removeClass('gone');
 								settings.textFeedback.removeClass('invisible');
 								settings.textFeedback.html('Error when sending request.');
@@ -67,6 +66,7 @@
 							settings.textFeedback.removeClass('gone');
 							settings.textFeedback.removeClass('invisible');
 							settings.textFeedback.html('Error when sending request.');
+							console.log(errorThrown);
 							console.log('ajax error');
 
 						}

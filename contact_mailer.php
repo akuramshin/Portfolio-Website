@@ -8,12 +8,13 @@ require './PHPMailer/src/PHPMailer.php';
 require './PHPMailer/src/SMTP.php';
 
 // Setup out mailing with the google SMTP service
-$mail = new PHPMailer();
+$mail = new PHPMailer;
 $mail->isSMTP();
+$mail->SMTPDebug = 2;
 $mail->SMTPAuth = true;
-$mail->SMTPSecure = 'ssl';
+$mail->SMTPSecure = 'tls';
 $mail->Host = 'smtp.gmail.com';
-$mail->Port = '465';
+$mail->Port = 587;
 $mail->isHTML();
 // Here you input the email that will be sending the contact messages
 $mail->Username = 'billyballstick@gmail.com';
@@ -34,6 +35,17 @@ $mail->Subject = 'New Message';
 $mail->Body = $msg;
 $mail->AddAddress('artur.kurams@gmail.com');
 
-$mail->Send();
+//send the message, check for errors
+if (!$mail->send()) {
+    echo "Mailer Error: " . $mail->ErrorInfo;
+} else {
+    echo "Message sent!";
+    //Section 2: IMAP
+    //Uncomment these to save your message in the 'Sent Mail' folder.
+    #if (save_mail($mail)) {
+    #    echo "Message saved!";
+    #}
+}
+
 echo $msg;
 ?>
