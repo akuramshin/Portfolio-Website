@@ -10,6 +10,7 @@
 	$.fn.initForm = function (options) {
 		var settings = $.extend({
 			type: 'POST',
+			serverURL: '#',
 			successClean: this.find('.form-success-clean'),
 			successGone: this.find('.form-success-gone'),
 			successInvisible: this.find('.form-success-invisible'),
@@ -36,7 +37,7 @@
 						 * depending to your requirements
 						 */
 						type: settings.type,
-						url: 'contact_mailer.php',
+						url: settings.url,
 						data: form_data,
 
 						/* CALLBACK FOR SENDING EMAIL GOEAS HERE */

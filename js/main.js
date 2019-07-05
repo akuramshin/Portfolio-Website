@@ -284,8 +284,8 @@ $(document).on('ready', function () {
 
 					// init contact form
 					// Default server url
-					var newsletterServerUrl = './ajaxserver/serverfile.php';
-					var messageServerUrl = './ajaxserver/serverfile.php';
+					var newsletterServerUrl = 'contact_mailer.php';
+					var messageServerUrl = 'contact_mailer.php';
 
 					// Use form define action attribute
 					if (sendEmailForm.attr('action') && (sendEmailForm.attr('action')) != '') {
