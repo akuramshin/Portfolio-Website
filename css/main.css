@@ -4628,7 +4628,7 @@ textarea {
         padding: 0; } }
     @media (min-width: 1200px) and (orientation: landscape) {
       .slide-wrapper .legend {
-        width: 280px; } }
+        width: 550px; } }
     .slide-wrapper .legend a {
       color: #ffffff; }
       .slide-wrapper .legend a:hover {
