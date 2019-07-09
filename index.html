@@ -9,30 +9,8 @@
   <title>Artur Kuramshin</title>
 
   <!-- Meta -->
-  <!-- Page Description Here -->
-  <meta name="description" content="A beautiful and creative portfolio template. It is mobile friend (responsive) and comes with smooth animations">
-
   <!-- Disable screen scaling-->
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
-
-  <!-- Twitter Meta -->
-  <meta name="twitter:site" content="@miradontsoa">
-  <meta name="twitter:creator" content="@miradontsoa">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Page Title">
-  <meta name="twitter:description" content="Description of the page">
-  <meta name="twitter:image" content="/img/bg-default.jpg">
-
-  <!-- Facebook Meta -->
-  <meta property="og:url" content="your website url here">
-  <meta property="og:title" content="Page Title">
-  <meta property="og:description" content="Description of the page">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="/img/bg-default.jpg">
-  <meta property="og:image:secure_url" content="/img/bg-default.jpg">
-  <meta property="og:image:type" content="image/jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
 
   <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
   <!-- Web fonts and Web Icons -->
@@ -42,8 +20,6 @@
   <link rel="stylesheet" href="./fonts/font-awesome.min.css">
 
   <!-- Vendor CSS style -->
-  <link rel="stylesheet" href="./css/pageloader.css">
-
   <!-- Uncomment below to load individualy vendor CSS -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./js/vendor/swiper.min.css">
@@ -64,14 +40,6 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-  <!-- Page Loader : just comment these lines to remove it -->
-  <!-- <div class="page-loader" id="page-loader">
-    <div>
-      <div class="icon ion-spin"></div>
-      <p>loading</p>
-    </div>
-  </div> -->
-
   <!-- BEGIN OF site header Menu -->
   <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
 
@@ -88,34 +56,8 @@
     </button>
     <!-- End of menu icon toggler -->
 
-    <!-- Begin of logo/brand -->
-    <!-- <a class="navbar-brand" href="./#">
-      <span class="logo">
-        <img class="light-logo" src="img/logo.png" alt="Logo">
-      </span>
-      <span class="text">
-        <span class="line">Casely</span>
-        <span class="line sub">Portfolio Template</span>
-      </span>
-    </a> -->
-    <!-- End of logo/brand -->
-
     <!-- begin of menu wrapper -->
     <div class="all-menu-wrapper" id="navbarMenu">
-      <!-- Begin of top menu -->
-      <nav class="navbar-topmenu">
-        <!-- Begin of CTA Actions, & Icons menu -->
-        <!-- <ul class="navbar-nav navbar-nav-actions">
-				<li class="nav-item">
-					<a class="btn btn-outline-white btn-round" target="_blank" href="https://themeforest.net/user/mivfx/portfolio">
-						Buy Now
-					</a>
-				</li>
-			</ul> -->
-        <!-- End of CTA & Icons menu -->
-      </nav>
-      <!-- End of top menu -->
-
       <!-- Begin of hamburger mainmenu menu -->
       <nav class="navbar-mainmenu">
         <ul class="navbar-nav mr-auto">
@@ -128,10 +70,13 @@
             <a class="nav-link" href="./index.html#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./item-style2.html">Item</a>
+            <a class="nav-link" href="./index.html#experience-featured-1">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./demo.html">Demo</a>
+            <a class="nav-link" href="./index.html#project-featured-1">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -228,19 +173,25 @@
                 <h4 class="anim-2">Hello, nice to meet you!</h4>
                 <p class="anim-2">My name is Artur Kuramshin and I am a sophmore Computer Science
                   major studying at University of Toronto with a 3.7 CGPA. I am mainly interested in
-                  software development, IoT, and robotics. I am experienced in Python, Java(Android),
-                  and C and am knowledgeable in HTML/CSS/Javascript/PHP.
+                  software development, robotics, IoT and AI. I am experienced in Python(including Django),
+                  Java(including Android), and C and am knowledgeable in HTML/CSS/Javascript/PHP.
               </div>
-              <a class="btn btn-circicon btn-primary" href="#projects-featured">
+              <a class="btn btn-circicon btn-primary" href="#experience-featured-1">
                 <span class="icon">
                   <i class="ion ion-chevron-down"></i>
                 </span>
-                <span class="text">Selected Works</span>
+                <span class="text">Experience</span>
               </a>
             </div>
             <div class="col-sm-6" style="vertical-align: middle; padding-top: 8%;">
               <div class="illustr">
                 <img src="img/items/uoft-1.jpg" class='img'>
+              </div>
+              <div class="icons icons-margin" style="padding-top: 10%;">
+                <span>Link to my resume: </span>
+                <a class="icon-btn" href="/Resume.pdf" target="_blank">
+                  <i class="icon fa fa-file"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -259,7 +210,7 @@
     <!-- End of description section -->
 
     <!-- Begin of slider section  PROJECTS SECTION-->
-    <div class="section section-twoside fp-auto-height-responsive " data-section="projects-featured">
+    <div class="section section-twoside fp-auto-height-responsive " data-section="experience-featured-1">
       <div class="slide">
         <div class="slide-wrapper">
           <div class="item-wrapper">
@@ -267,6 +218,7 @@
               <img class="img img-block" src="img/items/uoft-2.png" alt="Image">
             </div>
             <div class="legend">
+              <a href="https://github.com/akuramshin/SmartPetDoor" target="_blank">
                 <h3>Experience</h3>
                 <h4>Work Study May 2019 - Jul 2019</h4>
                 <p>- Worked for the Electronics and Computing Facility located at the Department of Chemistry,
@@ -275,6 +227,7 @@
                      or damaged analytical and laboratory equipment.<br />
                    - Helped develop a wall-mounted electronic calendar to sync and update according to Outlook.
                 </p>
+               </a>
               <a class="btn btn-transp-arrow btn-primary" href="https://sites.chem.utoronto.ca/ecf/" target="_blank">
                 <span class="text">Details</span>
                 <span class="icon arrow-right"></span>
@@ -283,37 +236,6 @@
           </div>
         </div>
       </div>
-
-      <div class="slide">
-        <div class="slide-wrapper">
-          <div class="item-wrapper">
-            <div class="illustr">
-              <img class="img img-block" src="img/items/img-sample4.jpg" alt="Image">
-            </div>
-            <div class="legend">
-              <a href="item-style2.html#project_url">
-                <h3>Summer Scape</h3>
-                <h4>Photography</h4>
-                <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
-              </a>
-              <a class="btn btn-transp-arrow btn-primary" href="item-style2.html#project_url">
-                <span class="text">Details</span>
-                <span class="icon arrow-right"></span>
-              </a>
-              <div class="icons">
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-instagram"></i>
-                </a>
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
 
       <!-- Arrows scroll down/up -->
       <footer class="section-footer scrolldown">
@@ -325,7 +247,7 @@
 
     </div>
     <!-- End of slider section -->
-    <div class="section section-twoside fp-auto-height-responsive " data-section="projects-featured-2">
+    <div class="section section-twoside fp-auto-height-responsive " data-section="project-featured-1">
       <div class="slide">
         <div class="slide-wrapper">
           <div class="item-wrapper">
@@ -333,18 +255,53 @@
               <img class="img img-block" src="img/items/pi.png" alt="Image">
             </div>
             <div class="legend">
-              <a href="item-style2.html#project_url">
+              <a href="https://github.com/akuramshin/SmartPetDoor" target="_blank">
                 <h3>Project</h3>
                 <h4>Smart Pet Door</h4>
                 <p>Developed a remotely unlocked, motion sensitive pet door with image delivery
-                  to the user's phone via an Android app. Engineered a pet door outfitted with a
+                  to the user's phone via an Android app. Developed a pet door outfitted with a
                   motion sensor, webcam, solenoid, and an RPi. Programmed the Raspberry Pi to
                   interface with the sensors and to run a Django server. Developed an Android app
                   to receive the external image and to remotely open door.
-
                 </p>
               </a>
               <a class="btn btn-transp-arrow btn-primary" href="https://github.com/akuramshin/SmartPetDoor" target="_blank">
+                <span class="text">Details</span>
+                <span class="icon arrow-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon"></span>
+          <span class="txt">All Works</span>
+        </a>
+      </footer>
+
+    </div>
+
+    <div class="section section-twoside fp-auto-height-responsive " data-section="project-featured-2">
+      <div class="slide">
+        <div class="slide-wrapper">
+          <div class="item-wrapper">
+            <div class="illustr">
+              <img class="img img-block" src="img/items/bot.jpg" alt="Image">
+            </div>
+            <div class="legend">
+              <a href="https://github.com/akuramshin/WebRobot" target="_blank">
+                <h3>Project</h3>
+                  <h4>Web Robot</h4>
+                  <p>Wireless Controllable Robot Live Stream built as a modular web application.
+                     Hacked and modified an iRobot Roomba, outfitting it with a Raspberry Pi and webcam.
+                     Engineered a website on the RPi with a live stream to act as an interface for the user.
+                     Coded a socket layer to relay commands from the local server to the robot.
+                  </p>
+              </a>
+              <a class="btn btn-transp-arrow btn-primary" href="https://github.com/akuramshin/WebRobot" target="_blank">
                 <span class="text">Details</span>
                 <span class="icon arrow-right"></span>
               </a>
@@ -375,9 +332,8 @@
               <!-- title and description -->
               <div class="title-desc">
                 <h2 class="display-4 display-title anim-1">Projects</h2>
-                <p class="anim-2">List of our projects. Lorem ipsum magicum dolor sit amet, consectetur
-                  adipiscing elit. Maecenas a sem ultrices neque vehicula fermentum
-                  a sit amet nulla.
+                <p class="anim-2">List of the rest of my projects, all files and documentation
+                  can be found on my github. (Click on a project for more information)
                 </p>
               </div>
             </div>
@@ -387,18 +343,17 @@
           <div class="project-list grid-1 grid-md-2 grid-lg-3 anim-list">
             <!-- an item -->
             <div class="item media media-project">
+             <a href="https://github.com/akuramshin/Follow-Me-Robot" target="_blank">
               <div class="media-img">
-                <img class="" src="img/items/img-sample9-square.jpg" alt="An image">
+                <img class="" src="img/items/arduino.jpg" alt="An image">
               </div>
+             </a>
               <div class="media-body">
-                <a href="item-style2.html#project_url">
-                  <h4>E-learning</h4>
-                  <h3>Coding Course</h3>
-                  <p class="price">$12</p>
-                </a>
+                  <h3>Follow-Me-Robot</h3>
+                  <h4>Autonomous robot that follows you.</h4>
               </div>
               <div class="media-footer">
-                <a class="btn btn-transp-arrow btn-primary" href="item.html">
+                <a class="btn btn-transp-arrow btn-primary" href="https://github.com/akuramshin/Follow-Me-Robot" target="_blank">
                   <span class="text">Details</span>
                   <span class="icon arrow-right"></span>
                 </a>
@@ -406,18 +361,17 @@
             </div>
             <!-- an item -->
             <div class="item media media-project">
+             <a href="https://github.com/akuramshin/Sudoku" target="_blank">
               <div class="media-img">
-                <img class="" src="img/items/img-sample10-square.jpg" alt="An image">
+                <img class="" src="img/items/sudoku.png" alt="An image">
               </div>
+             </a>
               <div class="media-body">
-                <a href="item-style2.html#project_url">
-                  <h4>E-learning</h4>
-                  <h3>Coding Course</h3>
-                  <p class="price">$12</p>
-                </a>
+                  <h3>Sudoku</h3>
+                  <h4>Sudoku solving game.</h4>
               </div>
               <div class="media-footer">
-                <a class="btn btn-transp-arrow btn-primary" href="item.html">
+                <a class="btn btn-transp-arrow btn-primary" href="https://github.com/akuramshin/Sudoku" target="_blank">
                   <span class="text">Details</span>
                   <span class="icon arrow-right"></span>
                 </a>
@@ -425,18 +379,18 @@
             </div>
             <!-- an item -->
             <div class="item media media-project">
+             <a href="https://github.com/akuramshin/A-Star-Algorithm" target="_blank">
               <div class="media-img">
-                <img class="" src="img/items/img-sample11-square.jpg" alt="An image">
+                <img class="" src="img/items/astar.png" alt="An image">
               </div>
+             </a>
               <div class="media-body">
-                <a href="item-style2.html#project_url">
-                  <h4>E-learning</h4>
-                  <h3>Coding Course</h3>
-                  <p class="price">$12</p>
-                </a>
+                  <h3>A* Algorithm</h3>
+                  <h4>A visualization of the A-Star algorithm written both in Python
+                    and Java with the use of the Processing library.</h4>
               </div>
               <div class="media-footer">
-                <a class="btn btn-transp-arrow btn-primary" href="item.html">
+                <a class="btn btn-transp-arrow btn-primary" href="https://github.com/akuramshin/A-Star-Algorithm" target="_blank">
                   <span class="text">Details</span>
                   <span class="icon arrow-right"></span>
                 </a>
@@ -444,18 +398,17 @@
             </div>
             <!-- an item -->
             <div class="item media media-project">
+             <a href="https://github.com/akuramshin/MineSweeper" target="_blank">
               <div class="media-img">
-                <img class="" src="img/items/img-sample12-square.jpg" alt="An image">
+                <img class="" src="img/items/mine.png" alt="An image">
               </div>
+             </a>
               <div class="media-body">
-                <a href="item-style2.html#project_url">
-                  <h4>E-learning</h4>
-                  <h3>Coding Course</h3>
-                  <p class="price">$12</p>
-                </a>
+                  <h3>MineSweeper</h3>
+                  <h4>MineSweeper recreated in Java</h4>
               </div>
               <div class="media-footer">
-                <a class="btn btn-transp-arrow btn-primary" href="item.html">
+                <a class="btn btn-transp-arrow btn-primary" href="https://github.com/akuramshin/MineSweeper" target="_blank">
                   <span class="text">Details</span>
                   <span class="icon arrow-right"></span>
                 </a>
@@ -463,18 +416,17 @@
             </div>
             <!-- an item -->
             <div class="item media media-project">
+             <a href="https://github.com/akuramshin/Portfolio-Website" target="_blank">
               <div class="media-img">
-                <img class="" src="img/items/img-sample13-square.jpg" alt="An image">
+                <img class="" src="img/items/me.jpg" alt="An image">
               </div>
+             </a>
               <div class="media-body">
-                <a href="item-style2.html#project_url">
-                  <h4>E-learning</h4>
-                  <h3>Coding Course</h3>
-                  <p class="price">$12</p>
-                </a>
+                  <h3>Portfolio Website</h3>
+                  <h4>Personal portfolio website (this website)</h4>
               </div>
               <div class="media-footer">
-                <a class="btn btn-transp-arrow btn-primary" href="item.html">
+                <a class="btn btn-transp-arrow btn-primary" href="https://github.com/akuramshin/Portfolio-Website" target="_blank">
                   <span class="text">Details</span>
                   <span class="icon arrow-right"></span>
                 </a>
@@ -482,29 +434,14 @@
             </div>
             <!-- an item -->
             <div class="item media media-project">
+             <a href="https://github.com/akuramshin/" target="_blank">
               <div class="media-img">
-                <img class="" src="img/items/img-sample14-square.jpg" alt="An image">
+                <img class="" src="img/items/github.png" alt="An image">
               </div>
-              <div class="media-body">
-                <a href="item-style2.html#project_url">
-                  <h4>E-learning</h4>
-                  <h3>Coding Course</h3>
-                  <p class="price">$12</p>
-                </a>
-              </div>
-              <div class="media-footer">
-                <a class="btn btn-transp-arrow btn-primary" href="item.html">
-                  <span class="text">Details</span>
-                  <span class="icon arrow-right"></span>
-                </a>
-              </div>
+             </a>
             </div>
-
           </div>
-
         </div>
-
-
 
 
         <!-- Arrows scroll down/up -->
@@ -518,347 +455,6 @@
       <!-- End of section wrapper -->
     </div>
     <!-- End of list projects section -->
-
-    <!-- Begin of list feature section -->
-    <div class="section section-list-feature fp-auto-height-responsive " data-section="services">
-      <!-- section cover -->
-      <div class="section-cover-full bg-img" data-image-src="./img/sections/services.png">
-      </div>
-
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper fullwidth with-margin">
-        <!-- content -->
-        <div class="section-content anim">
-          <div class="row">
-            <div class="col-12 col-lg-6 text-left">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h2 class="display-4 display-title anim-1">Services</h2>
-                <p class="anim-2">List of our services. Lorem ipsum magicum dolor sit amet, consectetur
-                  adipiscing elit. Maecenas a sem ultrices neque vehicula fermentum
-                  a sit amet nulla.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- service list -->
-          <div class="service-list grid-1 grid-md-2 grid-lg-4 anim-list decor">
-            <!-- an item -->
-            <div class="item media">
-              <div class="img">
-                <i class="icon ion-code-working"></i>
-              </div>
-              <div class="media-body">
-                <h4>Coding</h4>
-                <p>An awesome service that we offer to you. This is just a placeholder
-                  text.</p>
-
-                <a class="btn btn-transp-arrow btn-primary" href="">
-                  <span class="text">Details</span>
-                  <span class="icon arrow-right"></span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media">
-              <div class="img">
-                <i class="icon ion-ios-cog-outline"></i>
-              </div>
-              <div class="media-body">
-                <h4>Mechanics</h4>
-                <p>An awesome service that we offer to you. This is just a placeholder
-                  text.</p>
-
-
-                <a class="btn btn-transp-arrow btn-primary" href="">
-                  <span class="text">Details</span>
-                  <span class="icon arrow-right"></span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media">
-              <div class="img">
-                <i class="icon ion-ios-analytics-outline"></i>
-              </div>
-              <div class="media-body">
-                <h4>Analytics</h4>
-                <p>An awesome service that we offer to you. This is just a placeholder
-                  text.</p>
-
-                <a class="btn btn-transp-arrow btn-primary" href="">
-                  <span class="text">Details</span>
-                  <span class="icon arrow-right"></span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media">
-              <div class="img">
-                <i class="icon ion-ios-grid-view-outline"></i>
-              </div>
-              <div class="media-body">
-                <h4>Design</h4>
-                <p>An awesome service that we offer to you. This is just a placeholder
-                  text.</p>
-
-                <a class="btn btn-transp-arrow btn-primary" href="">
-                  <span class="text">Details</span>
-                  <span class="icon arrow-right"></span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media">
-              <div class="img">
-                <i class="icon ion-ios-albums-outline"></i>
-              </div>
-              <div class="media-body">
-                <h4>Painting</h4>
-                <p>An awesome service that we offer to you. This is just a placeholder
-                  text.</p>
-
-                <a class="btn btn-transp-arrow btn-primary" href="">
-                  <span class="text">Details</span>
-                  <span class="icon arrow-right"></span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media">
-              <div class="img">
-                <i class="icon ion-ios-camera-outline"></i>
-              </div>
-              <div class="media-body">
-                <h4>Photogramhy</h4>
-                <p>An awesome service that we offer to you. This is just a placeholder
-                  text.</p>
-
-                <a class="btn btn-transp-arrow btn-primary" href="">
-                  <span class="text">Details</span>
-                  <span class="icon arrow-right"></span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media">
-              <div class="img">
-                <i class="icon ion-ios-cloud-outline"></i>
-              </div>
-              <div class="media-body">
-                <h4>Hosting</h4>
-                <p>An awesome service that we offer to you. This is just a placeholder
-                  text.</p>
-
-                <a class="btn btn-transp-arrow btn-primary" href="">
-                  <span class="text">Details</span>
-                  <span class="icon arrow-right"></span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media">
-              <div class="img">
-                <i class="icon ion-ios-game-controller-a-outline"></i>
-              </div>
-              <div class="media-body">
-                <h4>Entertainment</h4>
-                <p>An awesome service that we offer to you. This is just a placeholder
-                  text.</p>
-
-                <a class="btn btn-transp-arrow btn-primary" href="">
-                  <span class="text">Details</span>
-                  <span class="icon arrow-right"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Projects</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of list feature section -->
-
-
-    <!-- Begin of list products section -->
-    <div class="section section-grid fp-auto-height-responsive " data-section="products">
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper fullwidth with-margin">
-
-
-        <div class="section-content mb-3">
-          <div class="row">
-            <div class="col-12 col-lg-6 text-left">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h2 class="display-4 display-title anim-1">Products</h2>
-                <p class="anim-2">List of products. Lorem ipsum magicum dolor sit amet, consectetur
-                  adipiscing elit. Maecenas a sem ultrices neque vehicula fermentum
-                  a sit amet nulla.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Begin of item list -->
-        <div class="section-content row justify-content-between">
-          <!-- item  -->
-          <div class="col-12 col-sm-6 col-lg-4 center-vh">
-            <div class="section-content anim translateUp">
-              <div class="images text-center">
-                <div class="img-frame-normal">
-                  <div class="img-1 shadow">
-                    <a href="item-style2.html#project_url">
-                      <img class="img" src="img/items/img-sample5.jpg" alt="Image">
-                    </a>
-                    <span class="price bottom">
-                      $39.99
-                    </span>
-                  </div>
-                  <div class="legend text-center decor">
-                    <h3 class="decor">
-                      <strong>Fish Game</strong>
-                    </h3>
-                    <p>This is just a placeholder text.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- item  -->
-          <div class="col-12 col-sm-6 col-lg-4 center-vh">
-            <div class="section-content anim">
-              <div class="images text-center">
-                <div class="img-frame-normal">
-                  <div class="img-1 shadow">
-                    <a href="item-style2.html#project_url">
-                      <img class="img" src="img/items/img-sample6.jpg" alt="Image">
-                    </a>
-                    <span class="price bottom">
-                      $39.99
-                    </span>
-                  </div>
-                  <div class="legend text-center decor">
-                    <h3 class="display-normal">
-                      <strong>Bird App</strong>
-                    </h3>
-                    <p>This is just a placeholder text.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- item  -->
-          <div class="col-12 col-sm-6 col-lg-4 center-vh">
-            <div class="section-content anim translateDown">
-              <div class="images text-center">
-                <div class="img-frame-normal">
-                  <div class="img-1 shadow">
-                    <a href="item-style2.html#project_url">
-                      <img class="img" src="img/items/img-sample7.jpg" alt="Image">
-                    </a>
-                    <span class="price bottom">
-                      $39.99
-                    </span>
-                  </div>
-                  <div class="legend text-center decor">
-                    <h3 class="display-normal">
-                      <strong>Photo App</strong>
-                    </h3>
-                    <p>This is just a placeholder text.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- item  -->
-          <div class="col-12 col-sm-6 col-lg-4 center-vh">
-            <div class="section-content anim translateUp">
-              <div class="images text-center">
-                <div class="img-frame-normal">
-                  <div class="img-1 shadow">
-                    <a href="item-style2.html#project_url">
-                      <img class="img" src="img/items/img-sample8.jpg" alt="Image">
-                    </a>
-                    <span class="price bottom">
-                      $39.99
-                    </span>
-                  </div>
-                  <div class="legend text-center decor">
-                    <h3 class="display-normal">
-                      <strong>Painting</strong>
-                    </h3>
-                    <p>This is just a placeholder text.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- item  -->
-          <div class="col-12 col-sm-6 col-lg-4 center-vh">
-            <div class="section-content anim">
-              <div class="images text-center">
-                <div class="img-frame-normal">
-                  <div class="img-1 shadow">
-                    <a href="item-style2.html#project_url">
-                      <img class="img" src="img/items/img-sample9.jpg" alt="Image">
-                    </a>
-                    <span class="price bottom">
-                      $39.99
-                    </span>
-                  </div>
-                  <div class="legend text-center decor">
-                    <h3 class="display-normal">
-                      <strong>Software</strong>
-                    </h3>
-                    <p>This is just a placeholder text.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- item  -->
-          <div class="col-12 col-sm-6 col-lg-4 center-vh">
-            <div class="section-content anim translateDown">
-              <div class="images text-center">
-                <div class="img-frame-normal">
-                  <div class="img-1 shadow">
-                    <a href="item-style2.html#project_url">
-                      <img class="img" src="img/items/img-sample10.jpg" alt="Image">
-                    </a>
-                    <span class="price bottom">
-                      $39.99
-                    </span>
-                  </div>
-                  <div class="legend text-center decor">
-                    <h3 class="display-normal">
-                      <strong>Home Decoration</strong>
-                    </h3>
-                    <p>This is just a placeholder text.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End of item list -->
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of list products section -->
-
 
     <!-- Begin of contact section -->
     <div class="section section-contact fp-auto-height-responsive no-slide-arrows " data-section="contact">
@@ -896,16 +492,11 @@
                         <a class="icon-btn" href="https://www.facebook.com/artur.kuramshin.1" target="_blank">
                           <i class="icon fa fa-facebook"></i>
                         </a>
+                        <a class="icon-btn" href="/resume.pdf" target="_blank">
+                          <i class="icon fa fa-file"></i>
+                        </a>
                       </div>
                     </div>
-                    <!-- <div class="col-12 col-md-6 col-lg-6">
-                      <h4>Address</h4>
-                      <p>
-                        Company address
-                        <br>12 Street Turning Place
-                        <br>South Est, Antartica
-                      </p>
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -968,11 +559,6 @@
 
     <!-- Right content -->
     <div class="footer-right">
-      <!-- <p class="note">Casely by
-        <a href="http://highhay.com">
-          <span class="marked">Miradontsoa</span>
-        </a>
-      </p> -->
       <ul class="social">
         <li>
           <a href="https://www.github.com/akuramshin" target="_blank">
