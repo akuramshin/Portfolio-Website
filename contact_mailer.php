@@ -17,9 +17,9 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
 $mail->isHTML();
 // Here you input the email that will be sending the contact messages
-$mail->Username = 'billyballstick@gmail.com';
-$mail->Password = 'kuramshin12';
-$mail->SetFrom('billyballstick@gmail.com');
+$mail->Username = 'youremailhere';
+$mail->Password = 'youremailpasswordhere';
+$mail->SetFrom('sentfromemailhere');
 
 // Get the contact information and message
 $email_address = $_POST['email'] ;
@@ -33,7 +33,7 @@ $msg =
 // Setup the mail template
 $mail->Subject = 'New Message';
 $mail->Body = $msg;
-$mail->AddAddress('artur.kurams@gmail.com');
+$mail->AddAddress('emailtosendtohere');
 
 //send the message, check for errors
 if (!$mail->send()) {
