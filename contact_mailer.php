@@ -7,6 +7,11 @@ require './PHPMailer/src/Exception.php';
 require './PHPMailer/src/PHPMailer.php';
 require './PHPMailer/src/SMTP.php';
 
+// Hide the password for your email from the client
+$myfile = fopen("../pass.txt", "r") or die("Unable to open file!");
+$pass = fgets($myfile);
+fclose($myfile);
+
 // Setup out mailing with the google SMTP service
 $mail = new PHPMailer;
 $mail->isSMTP();
@@ -18,10 +23,9 @@ $mail->Port = 587;
 $mail->isHTML();
 // Here you input the email that will be sending the contact messages
 $mail->Username = 'billyballstick@gmail.com';
-$mail->Password = 'kuramshin12';
+$mail->Password = $pass;
 $mail->SetFrom('billyballstick@gmail.com');
 
-// Get the contact information and message
 $email_address = $_POST['email'] ;
 $comments = $_POST['message'] ;
 $name = $_POST['name'] ;
@@ -31,7 +35,7 @@ $msg =
   "Comments: " . $comments ;
 
 // Setup the mail template
-$mail->Subject = 'New Message';
+$mail->Subject = 'Website Message';
 $mail->Body = $msg;
 $mail->AddAddress('artur.kurams@gmail.com');
 
@@ -46,6 +50,4 @@ if (!$mail->send()) {
     #    echo "Message saved!";
     #}
 }
-
-echo $msg;
 ?>

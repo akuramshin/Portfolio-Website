@@ -191,7 +191,6 @@ $(document).on('ready', function () {
 	var fpnavItem;
 	var mainPage = $('#mainpage');
 	var galleryPage = $('#gallerypage');
-	var sendEmailForm = $('.send_email_form');
 	var sendMessageForm = $('.send_message_form');
 	var scrollOverflow = true;
 	var css3 = true;
@@ -284,20 +283,12 @@ $(document).on('ready', function () {
 
 					// init contact form
 					// Default server url
-					var newsletterServerUrl = 'contact_mailer.php';
 					var messageServerUrl = 'contact_mailer.php';
 
-					// Use form define action attribute
-					if (sendEmailForm.attr('action') && (sendEmailForm.attr('action')) != '') {
-						newsletterServerUrl = sendEmailForm.attr('action');
-					}
 					if (sendMessageForm.attr('action') && (sendMessageForm.attr('action') != '')) {
 						messageServerUrl = sendMessageForm.attr('action');
 					}
 
-					sendEmailForm.initForm({
-						serverUrl: newsletterServerUrl,
-					});
 					sendMessageForm.initForm({
 						serverUrl: messageServerUrl,
 					});

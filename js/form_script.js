@@ -27,7 +27,6 @@
 				form_inputs.each(function () {
 					form_data[this.name] = $(this).val();
 				});
-			 	console.log(form_data);
 				$.ajax(
 					{
 						/*
