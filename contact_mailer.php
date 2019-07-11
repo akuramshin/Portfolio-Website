@@ -22,15 +22,9 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
 $mail->isHTML();
 // Here you input the email that will be sending the contact messages
-<<<<<<< HEAD
-$mail->Username = 'billyballstick@gmail.com';
-$mail->Password = $pass;
-$mail->SetFrom('billyballstick@gmail.com');
-=======
 $mail->Username = 'youremailhere';
 $mail->Password = 'youremailpasswordhere';
 $mail->SetFrom('sentfromemailhere');
->>>>>>> 32ac793b64141edecf198c942688b0911395efba
 
 $email_address = $_POST['email'] ;
 $comments = $_POST['message'] ;
