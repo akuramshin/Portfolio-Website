@@ -4595,6 +4595,10 @@ textarea {
           -ms-flex-pack: center;
               justify-content: center;
       margin-left: 0; } }
+    @media screen and (max-width: 420px) {
+        .portait .illustr {
+          display: none; }
+    }
   .slide-wrapper .item-wrapper {
     position: relative; }
   .slide-wrapper .illustr {
